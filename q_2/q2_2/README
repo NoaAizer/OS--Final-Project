@@ -1,0 +1,12 @@
+q2_2:
+
+1) "make"/ "make all" /"make client_server"
+2) "./server"
+3) "./client"
+4) Enter the given pid from server program, the signal and the amount
+5) In order to kill the server: " kill -9 <server_pid>
+
+*The explenation about the siganls that were not caught is in the "q22_315242412.pdf" file.
+
+
+
