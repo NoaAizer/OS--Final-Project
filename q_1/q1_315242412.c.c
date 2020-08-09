@@ -32,7 +32,7 @@ main(int argc, char* argv[])    /* Text Segment*/
 {
     static int key = 9973;      /* Initialized data segment  */
     static char mbuf[10240000]; /* Uninitialized data segment (bss) */
-    char* p;                    /* Stack frame for main() */
+    char* p;                    /* Not allocated. (Theoretically -Stack frame for main()) */
 
 
     doCalc(key);
