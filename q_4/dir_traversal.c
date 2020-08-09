@@ -15,7 +15,10 @@ static int display_info(const char *fpath, const struct stat *sb,
     if(tflag==FTW_SL ) return 0; //soft link
     printf("%s %ld %s \n",
         (tflag == FTW_D) ? "D" :
-        (tflag == FTW_F) ?   "F" :"", sb->st_ino, basename(fpath));
+        (tflag == FTW_F) ?   "F" :
+        (tflag == FTW_DNR) ? "DNR" :
+        (tflag == FTW_DP) ? "DP" :
+        (tflag == FTW_NS) ? "NS" :"UNKNOWN", sb->st_ino, basename(fpath));
     return 0;           // To tell nftw() to continue 
 }
 

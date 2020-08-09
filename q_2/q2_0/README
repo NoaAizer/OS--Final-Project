@@ -1,8 +1,8 @@
 q2_0:
 
 1) "make" / "make all"/ "make check_pid"
-2) "./check_pid"
-3) Enter a pid (as integer)
+2) "./check_pid <pid>"
+
 
 
 * Explenations of q2_1 in "q21_315242412.pdf" file.

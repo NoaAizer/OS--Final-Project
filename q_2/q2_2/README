@@ -2,9 +2,12 @@ q2_2:
 
 1) "make"/ "make all" /"make client_server"
 2) "./server"
-3) "./client"
-4) Enter the given pid from server program, the signal and the amount
+3) Open new terminal-
+4) "./client <server_pid> <signal> <amount_of_signals>"
 5) In order to kill the server: " kill -9 <server_pid>
+
+* The server pid is given while running the program (./server)
+* The signal should be 2 or 10.
 
 *The explenation about the siganls that were not caught is in the "q22_315242412.pdf" file.
 
