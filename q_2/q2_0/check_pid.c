@@ -17,9 +17,12 @@ int isNumber(char* p ){
     return 1;
 }
 
-int main(int agrc, char* argv[])
+int main(int argc, char* argv[])
 {
-
+    if (argc < 2){ //CHECK- amount of arguments
+        printf ("Don't forget to pass all arguments!\n");
+        return -1;
+    }
     if(isNumber(argv[1])==-1){
         printf("Invalid pid\n");
         return 0;
