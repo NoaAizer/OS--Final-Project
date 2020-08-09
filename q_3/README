@@ -2,6 +2,7 @@ q3_2:
 
 1) "make" / "make all"/ "make set_policy"
 2) "./set_policy <policy number> <priority>"
+*for SCHED_FIFO(1), RR(2), DEADLINE(6) enter - "sudo ./set_policy <policy number> <priority>"
 3) "make clean"
 
 
@@ -17,4 +18,4 @@ SCHED_BATCH=3
 SCHED_IDLE=5
 SCHED_DEADLINE=6
 
-*for SCHED_FIFO & RR enter - "sudo ./set_policy <policy number> <priority>"
+

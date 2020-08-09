@@ -101,11 +101,12 @@ int main (int argc , char* argv[]){
         .sched_deadline= 11*1000*1000
     
     };
-
-    if(sched_setattr(0,&attr,0)==-1)
-           printf("errorno=%d\n",errno);
+    if(policy==6){
+        if(sched_setattr(0,&attr,0)==-1)
+                printf("errorno=%d\n",errno);
+    }
      
-    if(policy!=6)
+    else
     if(sched_setscheduler(0,policy,&param)==-1)
          printf("errorno=%d\n",errno);
 
